@@ -7,7 +7,7 @@ RUN a2enmod proxy
 RUN a2enmod proxy_http
 RUN a2enmod proxy_wstunnel
 RUN a2enmod  rewrite
-RUN wget https://raw.githubusercontent.com/uncleluogithub/areyouok/main/000-default.conf
+RUN wget https://raw.githubusercontent.com/AhauFun01/bthost/main/000-default.conf
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN mv 000-default.conf /etc/apache2/sites-available
 RUN echo '<H1>Success!!</H1><H5>Now you can test you program!!</H5>' >/var/www/html/index.html
